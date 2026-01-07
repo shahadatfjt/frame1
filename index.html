@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Frame Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>ফটো ফ্রেম টুল</h2>
+
+<input type="file" id="upload" accept="image/*">
+
+<div id="frame">
+  <img id="photo">
+</div>
+
+<div class="controls">
+  <label>Zoom</label>
+  <input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
+</div>
+
+<button onclick="downloadImage()">Download</button>
+
+<canvas id="canvas" hidden></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
